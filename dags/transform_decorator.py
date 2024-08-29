@@ -108,3 +108,5 @@ def transfrom():
         >> [filter_expensive_trips_task, filter_long_trips_task]
         >> end_task
     )
+
+dag = transform()
