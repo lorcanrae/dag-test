@@ -67,7 +67,7 @@ def filter_expensive_trips(
     end_date=datetime(2021, 12, 31),
     schedule_interval="@monthly",
 )
-def transfrom():
+def transform():
     date = "{{ ds[:7] }}"
     bronze_file = f"{AIRFLOW_HOME}/data/bronze/yellow_tripdata_{date}.parquet"
     silver_file = f"{AIRFLOW_HOME}/data/silver/yellow_tripdata_{date}.csv"
